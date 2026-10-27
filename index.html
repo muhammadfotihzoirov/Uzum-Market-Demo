@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Uzum Market Demo</title><link rel="stylesheet" href="style.css">
+</head><body>
+<div class="topline">Uzum Market Demo — bu o‘quv/demo loyiha, haqiqiy buyurtma yuborilmaydi</div>
+<header class="header">
+  <a class="brand" href="index.html"><span class="brand-mark">u</span><span>uzum<span class="brand-light"> market</span></span></a>
+  <button class="catalog-btn" onclick="location.href='catalog.html'">☰ <span data-i18n="catalog">Katalog</span></button>
+  <div class="search"><input id="searchInput" placeholder="Mahsulot, kategoriya yoki tavsif..." oninput="searchProducts(this.value)"><button onclick="searchProducts(document.getElementById('searchInput').value)">⌕</button></div>
+  <nav class="head-actions"><a href="favorites.html">♡ <span data-i18n="favorites">Sevimlilar</span></a><a href="profile.html">♙ <span data-i18n="profile">Profil</span></a><a href="cart.html">🛒 <span data-i18n="cart">Savatcha</span><b id="cartCount">0</b></a></nav>
+  <select id="language" aria-label="Language"><option value="uz">UZ</option><option value="ru">RU</option><option value="en">EN</option></select>
+</header>
+<main>
+<section class="hero">
+ <div class="hero-copy"><span class="eyebrow">UZUM MARKET DEMO</span><h1>Har kuni kerakli<br><em>hammasi shu yerda</em></h1><p>Sevimli mahsulotlaringizni toping, savatchaga qo‘shing va demo buyurtma yarating.</p><a class="primary" href="catalog.html">Xarid qilish <span>→</span></a></div>
+ <div class="hero-art"><div class="bubble b1">✦</div><div class="bag">u<span>z</span></div><div class="bubble b2">−30%</div><div class="hero-card">🛍️<strong>200+ mahsulot</strong><small>Demo katalog</small></div></div>
+</section>
+<section class="section-head"><div><span class="eyebrow">TANLANG</span><h2>Kategoriyalar</h2></div><a href="catalog.html">Barchasi →</a></section>
+<div class="category-grid" id="categoryGrid"></div>
+<section class="promo"><div><span class="eyebrow">HAFTA TAKLIFI</span><h2>Yaxshi narxlar.<br>Yaxshi kayfiyat.</h2><p>Demo chegirmalar bilan tanishing.</p><a class="dark-btn" href="catalog.html">Chegirmalarni ko‘rish</a></div><div class="promo-emoji">🎁</div></section>
+<section class="section-head"><div><span class="eyebrow">SIZ UCHUN</span><h2>Ommabop mahsulotlar</h2></div><a href="catalog.html">Katalog →</a></section>
+<div class="product-grid" id="productGrid"></div>
+</main>
+<footer><a class="brand" href="index.html"><span class="brand-mark">u</span> uzum market</a><span>Demo loyiha · Haqiqiy to‘lov va buyurtma yo‘q</span><div><a href="admin.html">Admin panel</a> · <a href="profile.html">Profil</a></div></footer>
+<script src="app.js"></script><script>renderHome();</script>
+</body></html>
